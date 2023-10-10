@@ -4,15 +4,15 @@ songsData = [
         1: {
             "title": "Lost in the City Lights",
             "artist": "Cosmo Sheldrake",
-            "audio_url": "../assets/audio/lost-in-city-lights-145038.mp3",
-            "image_url": "../assets/img/cover-1.png",
+            "audio_url": "assets/audio/lost-in-city-lights-145038.mp3",
+            "image_url": "assets/img/cover-1.png",
             "duration": 72
         },
         2: {
             "title": "Forest Lullaby",
             "artist": "Lesfm",
-            "audio_url": "../assets/audio/forest-lullaby-110624.mp3",
-            "image_url": "../assets/img/cover-2.png",
+            "audio_url": "assets/audio/forest-lullaby-110624.mp3",
+            "image_url": "assets/img/cover-2.png",
             "duration": 138
         },
     }
