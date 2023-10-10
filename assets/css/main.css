@@ -1,6 +1,6 @@
 body {
     background-image: url('../img/bg.jpg');
-    background-size: cover;
+    background-size: 100vmax 100vmax;
     background-repeat: no-repeat;
 }
 
@@ -66,22 +66,30 @@ body {
     justify-self: end;
 }
 
-.time-bar {
+.range-input{
+    pointer-events:none
+}
+
+
+
+
+input[type=range]{
     width: 100%;
-    height: 4px;
-    border-radius: .2rem;
-    border: none;
-    outline: none;
-    background-color: white;
+    height: 2rem;
 }
 
-.bar-progress {
-    background-color: #C93B77;
-    width: 60%;
-    height: 100%;
-}
+input[type="range"]::-webkit-slider-thumb {
+    visibility: hidden;
+  }
 
-
+  input[type="range"]::-webkit-slider-runnable-track {
+    background: white;
+    background-color: #C93B77; 
+    opacity: 85%;
+    height: .5rem;
+    border-radius: .3rem;
+  }
+  
 
 .controls-container {
     margin-top: 2rem;
@@ -96,6 +104,10 @@ body {
     cursor: pointer;
 }
 
+.last-btn hover{
+    background-color: red;
+}
+
 .pause-btn {
     width: 2rem;
     height: 2rem;
@@ -104,6 +116,8 @@ body {
     padding: .5rem;
     cursor: pointer;
 }
+
+
 
 .next-btn {
     padding: .5rem;
