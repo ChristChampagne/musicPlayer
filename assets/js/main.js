@@ -14,7 +14,7 @@ songsData = [
             "audio_url": "assets/audio/forest-lullaby-110624.mp3",
             "image_url": "assets/img/cover-2.png",
             "duration": 138
-        },
+        }
     }
 ]
 let isPlaying;
@@ -68,12 +68,7 @@ function stopSong() {
 function previusSong() {
     stopSong()
     songPlaying - 1
-    console.log(songPlaying)
-    if (songPlaying == 0) {
-        playSong(Object.keys(songsData).lenght);
-    } else {
-        playSong(songPlaying - 1)
-    }
+    songPlaying == 0 ? playSong(Object.keys(songsData).lenght):playSong(songPlaying - 1)
 }
 function nextSong() {
     if (songPlaying >= Object.keys(songsData[0]).length) {
@@ -91,7 +86,6 @@ function progressBar(advanceValue) {
         songProgressBar.value = 0;
         return;
     }
-
     newValue = parseFloat(actualValue) + parseFloat(advanceValue);
     songProgressBar.value = newValue;
 }
