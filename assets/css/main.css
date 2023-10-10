@@ -12,7 +12,7 @@ body {
 .player-container {
     align-self: center;
     background-color: #2A2237;
-    margin-top: 13vmin;
+    margin-top: 10vmin;
     padding: 1.1rem;
     border-radius: .8rem;
 }
@@ -46,11 +46,14 @@ body {
     grid-template-columns: repeat(2, 1fr);
 }
 
+.time-bar{
+    margin: 0;
+}
+
 .remind-time {
     color: #3D404F;
     font-size: .7rem;
     margin: 0 !important;
-    margin: .2rem !important;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: .4rem !important;
     font-weight: bold;
@@ -59,23 +62,15 @@ body {
 .total-time {
     color: #3D404F;
     font-size: .7rem;
-    margin: .2rem !important;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: .4rem !important;
     font-weight: bold;
     justify-self: end;
 }
 
-.range-input{
-    pointer-events:none
-}
-
-
-
-
 input[type=range]{
     width: 100%;
-    height: 2rem;
+    padding: 0 !important;
 }
 
 input[type="range"]::-webkit-slider-thumb {
@@ -116,8 +111,6 @@ input[type="range"]::-webkit-slider-thumb {
     padding: .5rem;
     cursor: pointer;
 }
-
-
 
 .next-btn {
     padding: .5rem;
